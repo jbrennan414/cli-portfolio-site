@@ -53,6 +53,19 @@ class Response extends Component{
                         Thanks for stopping by!<br/>
                     </div>
                 )
+            case 'brennan -c':
+            case 'brennan --contact-me':
+                return(
+                    <div>
+                        <b>Contact Information</b><br/>
+                        <br/>
+                        <a href="https://github.com/Six-S"><i>GitHub</i></a><br/>
+                        <a href="mailto:example@example.com"><i>Email</i></a><br/>
+                        <a href="https://www.reddit.com/"><i>Reddit</i></a><br/>
+                        <a href="https://stackoverflow.com/"><i>Stack Overflow</i></a><br/>
+                        <br/>
+                    </div>
+                )
             default:
                 return( action + ": command not found" )
         }
