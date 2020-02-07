@@ -1,0 +1,50 @@
+.prompt {
+  color: yellow;
+}
+
+.help-show{
+  color:white;
+}
+
+.help-hide{
+  display: none;
+}
+
+.user-input{
+  font-family: monospace;
+  color: white;
+  background-color: black;
+  border: 0;
+  margin-left: 5px;
+  /* font-size: 15px; */
+  height: 15px;
+}
+
+.cursor{
+  /* margin-left: 5px; */
+  height: 15px;
+  width: 8px;
+  background-color: white;
+}
+
+.cursor-wrapper{
+  position: fixed;
+  padding: 0;
+  margin: 0;
+}
+
+.prompt-wrapper{
+  display: inline-flex;
+}
+
+.response{
+  color: white;
+}
+
+.top {
+  font-family: monospace;
+  font-size: ;
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+}
