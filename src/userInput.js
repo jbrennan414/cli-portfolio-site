@@ -10,14 +10,11 @@ class Input extends Component{
             'textLength': 0,
             'currentUser': "user@computer:~$"
         }
-
-        console.log(props)
     }
 
     //This function handles the width of the text box.
     //We use this to simulate the block carat commonly seen in a Linux CLI enviornment.
     textInputChange(e){
-        console.log('We are in input change!', e.target.value.length);
         let inputValLength = e.target.value.length;
 
         //if inputVal length is greater than our currently saved value, chars where added,
@@ -42,9 +39,6 @@ class Input extends Component{
                 'textWidth': 5
             });
         }
-
-        console.log(this.state)
-
     }
 
     //This function handles submission of our input.

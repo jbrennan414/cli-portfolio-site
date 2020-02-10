@@ -1,14 +1,31 @@
 import React, { Component } from 'react';
+import Sudo from './sudo.js'
 import './App.css';
 
 class Response extends Component{
     constructor(props){
         super(props)
+        this.state = {
+            'authenticated': true
+        }
+    }
+
+    //Function that passes information around regarding our fake sudo command.
+    handleSudo(auth){
+        if(auth !== this.state.authenticated){
+            this.setState({'authenticated': auth});
+            this.props.sudoResponse(auth);
+        }
     }
 
     returnText(){
-        console.log('Yo are we in here?')
         let action = this.props.action;
+
+        if(action.includes('sudo')){
+            return(
+                <Sudo handleSudo={this.handleSudo.bind(this)}/>
+            )
+        }
 
         switch(action){
             case 'help':
@@ -63,6 +80,15 @@ class Response extends Component{
                         <a href="mailto:example@example.com"><i>Email</i></a><br/>
                         <a href="https://www.reddit.com/"><i>Reddit</i></a><br/>
                         <a href="https://stackoverflow.com/"><i>Stack Overflow</i></a><br/>
+                        <br/>
+                    </div>
+                )
+            case 'site -p':
+            case 'site --pretty':
+                return(
+                    <div>
+                        <br/>
+                        <i>Coming Soon!</i><br/>
                         <br/>
                     </div>
                 )
