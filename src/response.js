@@ -58,7 +58,7 @@ class Response extends Component{
                         <b>Hello! My name is Brennan!</b><br/>
                         <br/>
                         I am currently a Full Stack Developer based out of Denver, CO.<br/>
-                        I am also an avid computer, software, and hardware enthusiast!<br/>
+                        I am also an avid software, hardware, and all around computer enthusiast!<br/>
                         Much of my time is spent improving my skills, testing out new technologies, and developing personal projects.<br/>
                         Everything from mechanical keyboards and 3D printers to Assembly and Robotics is fair game.<br/>
                         See my Projects page to learn more about my current and past projects!<br/>
@@ -66,6 +66,7 @@ class Response extends Component{
                         I can be found working on my 4Runner, playing a select few video games, and enjoying various forms of live music!<br/>
                         <br/>
                         I am always looking to connect, so drop me an email!<br/>
+                        Run <b>brennan -c</b> to find my contact information.<br/>
                         <br/>
                         Thanks for stopping by!<br/>
                     </div>
