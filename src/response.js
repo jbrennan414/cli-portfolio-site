@@ -34,7 +34,7 @@ class Response extends Component{
                         GNU bash, version 4.4.20(1)-release x86_64-pc-linux-gnu (not really) <br/>
                         These shell commands are defined internally.  Type help to see this list. <br/>
                         <br/>
-                        This website was designed to emulate the Terminal Enviornment in Linux. <br/>
+                        This website was designed to loosely resemble the Terminal Enviornment in Linux. <br/>
                         Would you prefer to view the same information in a more user friendly way? Coming soon! <br/>
                         See below for a list of commands. <br/>
                         <br/>
@@ -84,12 +84,38 @@ class Response extends Component{
                         <br/>
                     </div>
                 )
+            case 'brennan -s':
+            case 'brennan --skills':
+                return(
+                    <div>
+                        <br/>
+                        <b>Languages:</b><br/>
+                            Javascript<br/>
+                            SQL<br/>
+                            PHP<br/>
+                            Python<br/>
+                            Java<br/>
+                            C/C++<br/>
+                            Assembly<br/>
+                        <br/>
+                        <b>Tooling:</b><br/>
+                            Linux/macOS<br/>
+                            Docker<br/>
+                            More needs to go here.<br/>
+                        <br/>
+                    </div>
+                )
             case 'site -p':
             case 'site --pretty':
                 return(
                     <div>
                         <br/>
-                        <i>Coming Soon!</i><br/>
+                        <i>I'm afraid I can't do that, Dave.</i><br/>
+                        <br/>
+                        The "pretty" version of this website isn't ready for<br/>
+                        the prying eyes of the public just yet.<br/>
+                        <br/>
+                        Check back later, would you?<br/>
                         <br/>
                     </div>
                 )
