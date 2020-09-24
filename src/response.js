@@ -5,6 +5,8 @@ import './App.css';
 class Response extends Component{
     constructor(props){
         super(props)
+        //help is also a legal argument, but it doesn't take any arguments.
+        this.legalactions = [ 'site', 'brennan' ];
         this.state = {
             'authenticated': true
         }
@@ -23,7 +25,17 @@ class Response extends Component{
 
         if(action.includes('sudo')){
             return(
-                <Sudo handleSudo={this.handleSudo.bind(this)}/>
+                <div>user is not in the sudoers file. This incident will be reported.</div>
+            )
+        }
+
+        //This is a little weird.
+        //The things we do for completeness sake...
+        if(this.legalactions.includes(action)){
+            return(
+                <div>
+                    {action} requires 1 or more arguments!
+                </div>
             )
         }
 

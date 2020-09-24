@@ -53,10 +53,12 @@ class Input extends Component{
                 console.log('Down Arrow! This is gonna do something eventually.')
             }
         }
-        
     }
 
     render(){
+
+        console.log('We are getting an action when we should not be huh?', this.props.action);
+
         return(
             <div className="prompt-wrapper">
                 <div className="prompt">user@computer:~$</div>

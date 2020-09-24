@@ -24,26 +24,6 @@ class App extends Component {
     }
   }
 
-  //handle commands that change the way our UI looks.
-  // handleUIChanges(input, argument){
-  //   if(input === 'sudo'){
-  //     this.setState(
-  //       {  }
-  //     )
-  //   }
-  // }
-
-  //Not much in the site passes information all the way back to this level
-  //but we need to know if a user is using "sudo", so that we know if/when to show
-  //the next prompt.
-  handleSudo(value){
-    console.log('Hanlde Sudo 1???', value);
-    if(value !== this.state.authenticated){
-      console.log('Her Handle Sudo 1 logic???')
-      this.setState({ 'authenticated': value });
-    }
-  }
-
   //Conditionally render helpclass and stuff.
   render() {
     //TODO: Move this shit into the return like c'mon now.
