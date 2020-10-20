@@ -24,6 +24,14 @@ class App extends Component {
     }
   }
 
+  handleSudo(value){
+    console.log('Hanlde Sudo 1???', value);
+    if(value !== this.state.authenticated){
+      console.log('Her Handle Sudo 1 logic???')
+      this.setState({ 'authenticated': value });
+    }
+  }
+
   //Conditionally render helpclass and stuff.
   render() {
     //TODO: Move this shit into the return like c'mon now.
