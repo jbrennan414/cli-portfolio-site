@@ -53,12 +53,12 @@ class Response extends Component{
                         brennan [OPTION]<br/>
                             -a, --about-me || Print my about me section<br/>
                             -s, --skills || Print my skills section<br/>
-                            -p, --projects || Print my projects section<br/>
+                            {/* -p, --projects || Print my projects section<br/> */}
                             -c, --contact-me || Print my contact me section<br/>
                         site [OPTION]<br/>
-                            -p, --pretty || Redirect to the pretty version of this site<br/>
-                            -pc, --prompt-color ||  Change the prompt color<br/>
-                            -bc, --back-color || Change the background color<br/>
+                            {/* -p, --pretty || Redirect to the pretty version of this site<br/> */}
+                            {/* -pc, --prompt-color ||  Change the prompt color<br/> */}
+                            {/* -bc, --back-color || Change the background color<br/> */}
                         sshnuke<br/>
                         sudo -i<br/>
                     </div>
